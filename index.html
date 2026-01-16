@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Danh mục sản phẩm</h2>
+    <div class="category">
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+    </div>
+    <h2>Danh sách sản phẩm</h2>
+    <div class="searcher">
+        <div class="container">
+            <form action="#" class="search-bar" method="post">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm..." name="keyword">
+                <button>Tìm kiếm</button>
+            </form>
+            <select name="selector" id="selector" >
+                <option value="default" selected>Mặc định</option>
+                <option value="desc" >Giá từ cao đến thấp</option>
+                <option value="asc" >Giá từ thấp đến cao</option>
+                <option value="dis-desc">Giảm giá nhiều</option>
+            </select>
+        </div>
+    </div>
+    <div class="products-section">
+        <div class="container">
+            <div class="product-list"></div>
+            <div class="pagination">
+                <button class="previous" style="margin-right: 10px">Pre</button>
+                <span class="page" style="padding-top: 3px">1</span>
+                <button class="next" style="margin-left: 10px">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../modules/script.js" type="module"></script>
+
+</html>
